@@ -35,6 +35,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -105,6 +106,16 @@
                         <h1>Heading 1</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra ex. Etiam eget diam ligula. Sed at blandit ante. Vivamus feugiat, lacus eu suscipit mattis, tortor mi aliquam leo, quis laoreet ante sem sed sapien.</p>
 
+                        <!-- Flickity HTML init -->
+                        <div class="gallery js-flickity"
+                        data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                        <div class="gallery-cell"></div>
+                        </div>
+
                         <h2 class="mt-50">Heading 2</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra ex. Etiam eget diam ligula. Sed at blandit ante. Vivamus feugiat, lacus eu suscipit mattis, tortor mi aliquam leo, quis laoreet ante sem sed sapien.</p>
 
@@ -121,6 +132,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu pharetra ex. Etiam eget diam ligula. Sed at blandit ante. Vivamus feugiat, lacus eu suscipit mattis, tortor mi aliquam leo, quis laoreet ante sem sed sapien.</p>
 
                 </div><!-- /.typography -->
+
+               
 
                 <div class="buttons mt-50">
                     <h2 class="text-center heading-separator">Buttons</h2>
@@ -353,109 +366,53 @@
             </div>
         </div>
 
-        <div id="myCarousel" class="carousel slide projects-carousel">
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="row">
-                  <div class=".col-container-corausel">
+        <p><code>wrapAround: true</code></p>
 
-                    <a href="/msi-smart-connection-svenhund/portfolio/s1.html" title=""
-                      class="black-image-project-hover">
-                      <img src="/msi-smart-connection-svenhund/portfolio/assets/images/Start/3Dprinting.jpg" alt=""
-                        class="img-responsive">
-                    </a>
-                    <div class="card-container card-container-lg">
-                      <h4>001/006</h4>
-                      <h3>Fase 1</h3>
-                      <p>In de eerste sprint is er vooral kennis gemaakt met onderzoek doen en het opstellen van een
-                        Smart Journey.</p>
-                      <a href="/msi-smart-connection-svenhund/portfolio/s1.html" title=""
-                        class="btn btn-default">Bekijken</a>
-                    </div>
-                  </div>
-                  <div class=".col-container-corausel">
-                    <a href="/msi-smart-connection-svenhund/portfolio/s2.html" title=""
-                      class="black-image-project-hover">
-                      <img src="/msi-smart-connection-svenhund/portfolio/assets/images/Start/3Dprinting4.jpg" alt=""
-                        class="img-responsive">
-                    </a>
-                    <div class="card-container card-container-lg">
-                      <h4>002/006</h4>
-                      <h3>Fase 2</h3>
-                      <p>In deze fase is de definitieve onderzoeksvraag met bijbehorende deelvragen en onderzoekbaarheid
-                        vastgesteld.</p>
-                      <a href="/msi-smart-connection-svenhund/portfolio/s2.html" title=""
-                        class="btn btn-default">Bekijken</a>
-                    </div>
-                  </div>
-                  <div class=".col-container-corausel">
-                    <a href="/msi-smart-connection-svenhund/portfolio/s3.html" title=""
-                      class="black-image-project-hover">
-                      <img src="/msi-smart-connection-svenhund/portfolio/assets/images/Start/3Dprinting2.jpg" alt=""
-                        class="img-responsive">
-                    </a>
-                    <div class="card-container card-container-lg">
-                      <h4>003/006</h4>
-                      <h3>Fase 3</h3>
-                      <p>In fase 3 is de bronnenverzameling opgestart en is er een presentatie over de voortgang van het
-                        onderzoek gegeven.</p>
-                      <a href="/msi-smart-connection-svenhund/portfolio/s3.html" title=""
-                        class="btn btn-default">Bekijken</a>
-                    </div>
-                  </div>
 
-                </div>
-              </div>
-              <div class="item">
-                <div class="row">
-                  <div class=".col-container-corausel">
-                    <a href="/msi-smart-connection-svenhund/portfolio/s4.html" class="black-image-project-hover">
-                      <img src="/msi-smart-connection-svenhund/portfolio/assets/images/Start/3Dprinting.jpg" alt="Image"
-                        class="img-responsive">
-                    </a>
-                    <div class="card-container">
-                      <h4>004/006</h4>
-                      <h3>Fase 4</h3>
-                      <p>Fase 4 bestaat uit een eerste opzet van het onderzoek en het vinden van experts op het gebied
-                        van 3D-printen.</p>
-                      <a href="/msi-smart-connection-svenhund/portfolio/s4.html" class="btn btn-default">Bekijken</a>
-                    </div>
-                  </div>
-                  <div class=".col-container-corausel">
-                    <a href="/msi-smart-connection-svenhund/portfolio/s5.html" class="black-image-project-hover">
-                      <img src="/msi-smart-connection-svenhund/portfolio/assets/images/Start/3Dprinting4.jpg"
-                        alt="Image" class="img-responsive">
-                    </a>
-                    <div class="card-container">
-                      <h4>005/006</h4>
-                      <h3>Fase 5</h3>
-                      <p>Deze fase bestaat uit het uiteindelijke eindproduct, oftewel het afgeronde onderzoek naar de
-                        omvang van de 3D-print markt over een aantal jaar.</p>
-                      <a href="/msi-smart-connection-svenhund/portfolio/s5.html" class="btn btn-default">Bekijken</a>
-                    </div>
-                  </div>
 
-                  <div class=".col-container-corausel">
-                    <a href="/msi-smart-connection-svenhund/portfolio/s6.html" class="black-image-project-hover">
-                      <img src="/msi-smart-connection-svenhund/portfolio/assets/images/Start/3Dprinting2.jpg"
-                        alt="Image" class="img-responsive">
-                    </a>
-                    <div class="card-container">
-                      <h4>006/006</h4>
-                      <h3>Fase 6</h3>
-                      <p>In fase 6 wordt er terug gekeken op het verloop van deze leerlijn, bestaande uit een reflectie
-                        op het eindresultaat, leerdoelen en de ervaringen.</p>
-                      <a href="/msi-smart-connection-svenhund/portfolio/s6.html" class="btn btn-default">Bekijken</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-          </div>
+        <div class="col-md-12">
+     
+            <div id="myCarousel" class="carousel slide projects-carousel">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <div class="row">
+                          <div class="col-sm-4">
+      
+                            <a href="./work.html" title="" class="black-image-project-hover">
+                              <img src="./assets/images/work01-hover.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="card-container card-container-lg">
+                              <h4>001/006</h4>
+                              <h3>Fringilla sit amet</h3>
+                              <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies.</p>
+                              <a href="./work.html" title="" class="btn btn-default">Discover</a>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <a href="./work.html" title="" class="black-image-project-hover">
+                              <img src="./assets/images/work02-hover.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="card-container card-container-lg">
+                              <h4>002/006</h4>
+                              <h3>Nulla scelerisque</h3>
+                              <p>Proin pharetra metus id iaculis dignissim. In aliquet lorem ut ex ullamcorper.</p>
+                              <a href="./work.html" title="" class="btn btn-default">Discover</a>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <a href="./work.html" title="" class="black-image-project-hover">
+                              <img src="./assets/images/work03-hover.jpg" alt="" class="img-responsive">
+                            </a>
+                            <div class="card-container card-container-lg">
+                              <h4>003/006</h4>
+                              <h3>Vivamus vestibulum</h3>
+                              <p>Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</p>
+                              <a href="./work.html" title="" class="btn btn-default">Discover</a>
+                            </div>
+                          </div>
+                          
+                      </div>
 
         <div class="copyright">
             <div class="container">
@@ -487,6 +444,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
