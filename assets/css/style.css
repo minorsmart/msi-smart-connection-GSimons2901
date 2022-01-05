@@ -630,7 +630,7 @@ html, body {
 
 /* Background colors */
 .gray-bg {
-  background-color: #8c8f9447;
+  background-color: #fff;
 }
 
 /* Margin and padding resets */
@@ -880,6 +880,22 @@ html, body {
     background: url(../img/portfolio-hero.jpg) no-repeat center / cover;     
 }
 
+.Business-hero {
+    background: url(../img/businessbackground.jpg) no-repeat center / cover;
+}
+
+.Technology-hero {
+    background: url(../img/Technologybackground.png) no-repeat center / cover;
+}
+
+.Connection-hero {
+    background: url(../img/Connection.png) no-repeat center / cover;
+}
+
+.Project-hero {
+    background: url(../img/Project.webp) no-repeat center / cover;
+}
+
 .blog-hero {
     background: url(../img/blog-hero.jpg) no-repeat center / cover;     
 }
@@ -892,7 +908,7 @@ html, body {
 ================================================== */
 /* site-section */
 .site-section {
-   padding: 40px 0 40px;
+   padding: 30px 0px 0px 0px;
 }
 
 .subheading-text {
@@ -940,7 +956,7 @@ html, body {
 }
 
 .service {
-    min-height: 250px;
+    min-height: 170px;
 }
 
 .service-title {
