@@ -58,6 +58,7 @@
                 <div class="collapse navbar-collapse" id="agency-navbar-collapse">
 
                     <ul class="nav navbar-nav navbar-right">
+                    
 
                         <li><a href="Start.html">Start</a></li>
                         <li><a href="Business.html">Business</a></li>
@@ -67,6 +68,7 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="ui-elements.html">UI Elements</a></li>
+                   
 
                     </ul>
 
@@ -76,15 +78,16 @@
         </nav><!-- /.site-navigation -->
     </header><!-- /#mastheaed -->
 
+
     <div id="hero" class="hero overlay">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Welkom op mijn website.</h1>
-                <p>Deze website is ten behoeve voor mijn portfolio gemaakt.</p>
-                <a href="#" class="btn btn-border">Learn more</a>
+                <a id="btcprice" href="#" class="btn btn-border">Learn more</a>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
     </div><!-- /.hero -->
+
 
     <main id="main" class="site-main">
 
@@ -122,4 +125,19 @@
     <script src="assets/js/script.js"></script>
   
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        updateBTCPrice();
+        setInterval(updateBTCPrice, 10000);
+    });
+
+    function updateBTCPrice() {
+        fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
+        .then(response => response.json())
+        .then(data => {
+            $("#btcprice").html("1 BTC = €" + Math.round(data.bpi.EUR.rate_float)); 
+        });
+    }
+</script>
 </html>

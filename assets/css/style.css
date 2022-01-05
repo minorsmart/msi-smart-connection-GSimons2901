@@ -630,7 +630,7 @@ html, body {
 
 /* Background colors */
 .gray-bg {
-  background-color: #f5f5f8;
+  background-color: #8c8f9447;
 }
 
 /* Margin and padding resets */
@@ -652,11 +652,11 @@ html, body {
 .site-title {
     font-size: 18px;
     line-height: 26px;
-    color: #26272d;
+    color: #fff;
 }
 
 .site-title:hover {
-    color: #26272d;   
+    color: #fff;   
 }
 
 .site-title span {
@@ -682,7 +682,7 @@ html, body {
     padding: 0;
     font-size: 16px;
     position: relative;
-    color: #26272d;
+    color: #fff;
     line-height: 26px;
 }
 
@@ -790,7 +790,7 @@ html, body {
 
 .overlay:before {
   content: '';
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.2);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -816,13 +816,14 @@ html, body {
 .hero-text h1 {
     position: relative;
     margin: 0;
+    color: #fff;
 }
 
 .hero-text p {
     position: relative;
     margin: 45px 0 30px;
     font-size: 20px;
-    color: #26272d;
+    color: #fff;
 }
 
 .hero-text .btn {
@@ -1602,4 +1603,8 @@ a.linkedin-bg:hover {
 .container2 {
     background-color: #f5f5f8;
     padding-top: 95px;
+}
+
+.textcolour {
+    color: #fff;
 }
