@@ -616,6 +616,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    line-height: 10px;
     color: #26272d;
 }
 
@@ -1836,4 +1837,6 @@ http://flickity.metafizzy.co
     opacity: 1;
   }
 
-  
+.text-height {
+    line-height: 6px;
+}
