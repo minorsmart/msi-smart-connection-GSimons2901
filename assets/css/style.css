@@ -797,6 +797,18 @@ html, body {
     width: 100%;
     display: table;
     position: relative;
+
+}
+
+.API_background {
+    
+        background-image: url("../img/BTC-achtergrond.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        display: table;
+        position: relative;
 }
 
 .overlay:before {
@@ -893,6 +905,14 @@ html, body {
 
 .Business-hero {
     background: url(../img/businessbackground.jpg) no-repeat center / cover;
+}
+
+.API-hero {
+    background: url(../img/API.webp) no-repeat center / cover;
+}
+
+.API-BTC {
+    background: url(../img/API.webp) no-repeat center / cover;
 }
 
 .Technology-hero {
@@ -1286,6 +1306,12 @@ a.linkedin-bg:hover {
 
 #grid .col-md-4 {
     display: none;
+}
+
+#center-grid{
+    padding-left: 230px;
+    padding-right: auto;
+    margin-top: 25px;
 }
 
 #loadMore {
@@ -1839,4 +1865,24 @@ http://flickity.metafizzy.co
 
 .text-height {
     line-height: 6px;
+}
+
+.container-center {
+    display: flex;
+}
+
+.BTC-API {
+    
+    height: 200px;
+
+    
+    color: blue;
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+
 }
