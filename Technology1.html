@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Portfolio Smart Connection| GielSimons</title>
+    <title>Portfolio Smart Technology | GielSimons</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
@@ -36,6 +36,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,12 +48,11 @@
 
 <body>
 
-    <header id="masthead" class="site-header">
+    <header id="masthead" class="site-header site-header-white">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
 
                 <div class="navbar-header">
-
 
                     <a href="index.html" class="site-title"><span>Portfolio</span>GielSimons</a>
 
@@ -97,10 +97,11 @@
     <div id="hero" class="hero overlay subpage-hero Technology-hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Smart Technology</h1>
+                <h1>Smart Technology 1</h1>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Portfolio</li>
+                    <li class="breadcrumb-item"><a href="Connection.html">Portfolio</a></li>
+                    <li class="breadcrumb-item active">Smart Technology 1</li>
                 </ol>
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
@@ -108,69 +109,95 @@
 
     <main id="main" class="site-main">
 
-        <section class="site-section subpage-site-section section-portfolio">
+        <section class="site-section subpage-site-section section-project">
+
             <div class="container">
+                <div class="row">
+                    <div class="productpagina">
+                        <div class="col-md-8">
 
 
 
-                <div id="grid" class="row">
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["webdesign"]'>
-                        <div class="portfolio-item">
-                            <img src="assets/img/HTMLwiki.png" class="img-res-portfolio" alt="">
-                            <h4 class="portfolio-item-title">Smart Technology 1</h4>
-                            <a href="Technology1.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div><!-- /.portfolio-item -->
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["mobileapp"]'>
-                        <div class="portfolio-item">
-                            <img src="assets/img/Html code.jpg" class="img-res-portfolio" alt="">
-                            <h4 class="portfolio-item-title">Smart Technology 2</h4>
-                            <a href="Technology2.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["illustration"]'>
-                        <div class="portfolio-item">
-                            <img src="assets/img/JSlogo.png" class="img-res-portfolio" alt="">
-                            <h4 class="portfolio-item-title">Smart Technology 3</h4>
-                            <a href="Technology3.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["branding"]'>
-                        <div class="portfolio-item">
-                            <img src="assets/img/SQL.jpg" class="img-res-portfolio" alt="">
-                            <h4 class="portfolio-item-title">Smart Technology 4</h4>
-                            <a href="Technology4.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6" data-groups='["photography"]'>
-                        <div class="portfolio-item">
-                            <img src="assets/img/Bigdata.jpg" class="img-res-portfolio" alt="">
-                            <h4 class="portfolio-item-title">Smart Technology 5</h4>
-                            <a href="Technology5.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                        </div><!-- /.portfolio-item -->
 
 
-                    </div>
+
+                    <h3>Smart Technology 1</h3>
+
+                    <H6>In de eerste weken zijn we bezig geweest met het verbinden van sensoren aan de ESP-32. De lessen
+                        hiervoor werden gegeven door Mathijs. Het uiteindelijke doel is dat we een geautomatiseerd
+                        waterplant-systeem maken.
+                    </H6>
+
+                    <h6>De lessen van Mathijs waren erg duidelijk en helder, hierdoor was het erg gemakkelijk om de
+                        stappen te volgen en de sensoren aan te sluiten.
+                        In de onderstaande foto kunt u zien hoe ik alle sensoren heb aangesloten op mijn ESP-32. </h6>
+
+                    <img src="assets/img/ESP32.jpeg" class="img-res1" alt="">
+                    <h6>In de onderstaande afbeelding ziet u de monitor output van de sensoren.</h6>
+                    <img src="assets/img/ESPcode.png" class="img-res1" alt="">
+                    <h6>De DHT-sensor had ik ook werkend maar omdat deze niet nodig is voor het eindproduct heb ik deze
+                        uit mijn code gelaten.</h6>
+
+
+
                 </div>
-                <div class="text-center">
-                    <a class="btn btn-gray" href="#" id="loadMore">Load More</a>
-                </div>
-
             </div>
-        </section><!-- /.section-portfolio -->
+            </div>
 
+        </section><!-- /.section-project -->
+
+
+
+        </div>
+
+        <section class="site-section subpage-site-section section-related-projects">
+            <div class="container">
+                <div class="text-left">
+                    <h2>Related Projects</h2>
+                </div>
+
+                <!-- Flickity HTML init -->
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell portfolio-item">
+                        <img src="assets/img/Blynk.png" class="img-res" alt="">
+                        <h4 class="portfolio-item-title">Technology 2</h4>
+                        <a href="Technology2.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="gallery-cell portfolio-item">
+                        <img src="assets/img/JSlogo.png" class="img-res" alt="">
+                        <h4 class="portfolio-item-title">Technology 3</h4>
+                        <a href="Technology3.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="gallery-cell portfolio-item">
+                        <img src="assets/img/SQL.jpg" class="img-res" alt="">
+                        <h4 class="portfolio-item-title">Technology 4</h4>
+                        <a href="Technology4.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="gallery-cell portfolio-item">
+                        <img src="assets/img/Bigdata.jpg" class="img-res" alt="">
+                        <h4 class="portfolio-item-title">Technology 5</h4>
+                        <a href="Technology5.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+
+        </section><!-- /.section-portfolio -->
     </main><!-- /#main -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/jquery.shuffle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
 
 </body>
 
